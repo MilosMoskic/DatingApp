@@ -19,7 +19,7 @@ export class MemberListComponent implements OnInit{
   genderList = [{value: 'male', display: 'Males'}, {value: 'female', display: 'Females'}]
 
   ngOnInit(): void {
-    if (!this.memberService.paginatedResults()) this.loadMembers();
+    if (!this.memberService.paginatedResult()) this.loadMembers();
   }
 
   loadMembers() {
